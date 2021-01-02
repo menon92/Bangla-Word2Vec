@@ -7,7 +7,7 @@ A toy bangla [dataset](./data/kothou_keu_nei_v1.2.txt) is used to training word 
 `গেটের কাছে এসে মুনা ঘড়ি দেখতে চেষ্টা করল ডায়ালটা এত ছোট কিছুই দেখা গেল না আলোতেই দেখা যায় না আর এখন তো অন্ধকার রিকশা থেকে নেমেই একবার ঘড়ি দেখেছিল সাড়ে সাত গলির মোড় থেকে এ পর্যন্ত আসতে খুব বেশি হলে চার মিনিট লেগেছে কাজেই এখন বাজে সাতটা পঁয়ত্িশ এমন কিছু রাত হয়নি তবু মুনার অস্বস্তি লাগছে কালও ফিরতে রাত হয়েছে তার মামা শওকত সাহেব একটি কথাও বলেননি এমন ভাব করেছেন যেন মুনাকে দেখতেই পাননি আজও সে রকম করবেন ...`
 
 ## Training
-Please use [traiing word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebok for traiing. Here is some sample code,
+Please use [traiing word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebook for training. Here is some sample code,
 
 ```python
 x_test = np.array([word2id[w] for w in EVAL_WORDS])
@@ -105,17 +105,17 @@ Testing...
 'বাকের' এর কাছের শব্দ গুলো:  মুনা, বকুল, মামুন, UNK, দিয়ে, ভাই, না, করে, 
 ```
 
-For pretrain embeddngs check `embeddings/` directory
+For pre-training embeddings check `embeddings/` directory
 
-# Embeddigns Visualization
+# Embeddings Vector visualization
 
-Go to [https://projector.tensorflow.org/](https://projector.tensorflow.org/) and load your embeddigs vector. It support only tsv format vector. Sample visualization,
+Go to [https://projector.tensorflow.org/](https://projector.tensorflow.org/) and load your embeddings vector. It support only tsv format vector. Sample visualization,
 
 ![](./images/cosine_distance_between_baker_and_muna.png)
 
 
 ## Resoruces
-- [Efficient Estimation of Word Representations in vector space](https://arxiv.org/pdf/1301.3781.pdf)
+- [Efficient estimation of word representations in vector space](https://arxiv.org/pdf/1301.3781.pdf)
 - [Skipgram with examples](https://www.tensorflow.org/tutorials/text/word2vec#skip-gram_and_negative_sampling)
 - [Word2Vec Tensorflow 2x with low level api](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/tensorflow_v2/notebooks/2_BasicModels/word2vec.ipynb)
 - [Word2Vec using Embedding Layer Tensorflow 2x](https://petamind.com/word2vec-with-tensorflow-2-0-a-simple-cbow-implementation/)
