@@ -2,12 +2,12 @@
 Bangla word2vec using skipgram approach. 
 
 ## Dataset
-A toy bangla [dataset](./data/kothou_keu_nei_v1.2.txt) is used to training word vector. we create this data by taking all word from a famous bangla natok named `কোথাও কেউ নেই` . In early 90's it make a great hype among people. Some staring lines of this dataset,
+A toy bangla [dataset](./data/kothou_keu_nei_v1.2.txt) is used to training word vector. we create this data by taking all word from a famous bangla natok named `কোথাও কেউ নেই` . In early 90's it make a great hype among people. Some starting lines of this dataset,
 
 `গেটের কাছে এসে মুনা ঘড়ি দেখতে চেষ্টা করল ডায়ালটা এত ছোট কিছুই দেখা গেল না আলোতেই দেখা যায় না আর এখন তো অন্ধকার রিকশা থেকে নেমেই একবার ঘড়ি দেখেছিল সাড়ে সাত গলির মোড় থেকে এ পর্যন্ত আসতে খুব বেশি হলে চার মিনিট লেগেছে কাজেই এখন বাজে সাতটা পঁয়ত্িশ এমন কিছু রাত হয়নি তবু মুনার অস্বস্তি লাগছে কালও ফিরতে রাত হয়েছে তার মামা শওকত সাহেব একটি কথাও বলেননি এমন ভাব করেছেন যেন মুনাকে দেখতেই পাননি আজও সে রকম করবেন ...`
 
 ## Training
-Please use [traiing word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebok for traiing. Here is some sampe code
+Please use [traiing word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebok for traiing. Here is some sample code,
 
 ```python
 x_test = np.array([word2id[w] for w in EVAL_WORDS])
@@ -109,7 +109,7 @@ For pretrain embeddngs check `embeddings/` directory
 
 # Embeddigns Visualization
 
-Go to [https://projector.tensorflow.org/](https://projector.tensorflow.org/) and load your embeddigs vector. It support tsv format vector. Sample visualization,
+Go to [https://projector.tensorflow.org/](https://projector.tensorflow.org/) and load your embeddigs vector. It support only tsv format vector. Sample visualization,
 
 ![](./images/cosine_distance_between_baker_and_muna.png)
 
