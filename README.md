@@ -7,7 +7,7 @@ A toy bangla [dataset](./data/kothou_keu_nei_v1.2.txt) is used to training word 
 `গেটের কাছে এসে মুনা ঘড়ি দেখতে চেষ্টা করল ডায়ালটা এত ছোট কিছুই দেখা গেল না আলোতেই দেখা যায় না আর এখন তো অন্ধকার রিকশা থেকে নেমেই একবার ঘড়ি দেখেছিল সাড়ে সাত গলির মোড় থেকে এ পর্যন্ত আসতে খুব বেশি হলে চার মিনিট লেগেছে কাজেই এখন বাজে সাতটা পঁয়ত্িশ এমন কিছু রাত হয়নি তবু মুনার অস্বস্তি লাগছে কালও ফিরতে রাত হয়েছে তার মামা শওকত সাহেব একটি কথাও বলেননি এমন ভাব করেছেন যেন মুনাকে দেখতেই পাননি আজও সে রকম করবেন ...`
 
 ## Training
-Please use [traiing word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebook for training. Here is some sample code,
+Please use [training word2vec](./notebooks/word2vec_using_NCE_loss_v1_2.ipynb) or [colab](https://colab.research.google.com/drive/1I6dhrDAHU7j1nQIwfuaKElwKEGglt_dQ?usp=sharing) python notebook for training. Here is some sample code,
 
 ```python
 x_test = np.array([word2id[w] for w in EVAL_WORDS])
